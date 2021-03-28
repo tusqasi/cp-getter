@@ -25,9 +25,10 @@ git clone https://github.com/tusqasi/cp-getter
 │          └ sol.py
 │
 └── templates
-    ├ / other langs templates
+    ├ / other langs templates /
     └ py.py
 ```
+This program makes a new question directory in parent of root directory. Then gets the test cases and then puts them in their questions directory. And also makes a template file to beign your question.
 ## Usage
 
 ```bash
