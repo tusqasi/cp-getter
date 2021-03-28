@@ -14,9 +14,9 @@ def put_io(question_name: str, io: dict):
     try:
         os.mkdir(question_name)
     except FileExistsError:
+        os.chdir(question_name)
         return 1
 
-    os.chdir(question_name)
     # Now in in a folder with question_name
 
     try:
