@@ -14,7 +14,7 @@ def put_io(question_name: str, io: dict):
     try:
         os.mkdir(question_name)
     except FileExistsError:
-        return 0
+        return 1
 
     os.chdir(question_name)
     # Now in in a folder with question_name
@@ -23,11 +23,11 @@ def put_io(question_name: str, io: dict):
         with open("in.txt", mode="w") as ipf:
             ipf.write(io["in"])
     except FileExistsError:
-        print("File already exists")
+        return 1
 
     try:
         with open("out.txt", mode="w") as opf:
             opf.write(io["out"])
     except FileExistsError:
-        print("File already exists")
-    return 1
+        return 1
+    return 0
