@@ -11,7 +11,23 @@ git clone this repo to your filesystem
 ```bash
 git clone https://github.com/tusqasi/cp-getter
 ```
- 
+
+## Directory structure for now
+```bash
+├── /Other langs/
+├── py
+│   ├── cp_problem_getter
+│   │   └ main.py
+│   └── questions
+│       └── /problem_name/
+│          ├ in.txt
+│          ├ out.tx
+│          └ sol.py
+│
+└── templates
+    ├ / other langs templates
+    └ py.py
+```
 ## Usage
 
 ```bash
