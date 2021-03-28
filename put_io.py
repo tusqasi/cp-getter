@@ -2,14 +2,6 @@ import os
 
 
 def put_io(question_name: str, io: dict):
-    # TODO:
-
-    #   1. Make question folder
-
-    #   2. Make  in.txt, out.txt << put inputs and outputs
-
-    #   3. DONE
-
     os.chdir("../questions")
     try:
         os.mkdir(question_name)

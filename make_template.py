@@ -4,4 +4,3 @@ def make_template(URL: str):
 
     with open("sol.py", mode="w") as sol_file:
         sol_file.write(boiler_plate)
-

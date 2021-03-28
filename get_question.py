@@ -4,10 +4,10 @@ from bs4 import BeautifulSoup
 
 def get_question(URL):
 
-    return_obj = {"URL":URL}
+    return_obj = {"URL": URL}
     return_obj["io"] = dict()
-    return_obj["io"]["out"]:str
-    return_obj["io"]["in"]:str
+    return_obj["io"]["out"]: str
+    return_obj["io"]["in"]: str
 
     page = requests.get(URL).content
 
@@ -26,8 +26,9 @@ def get_question(URL):
         else:
             return_obj["io"]["in"] = _[1]
 
-    return_obj["name"] =  soup.find("div", class_="title").contents[0].split(".", 1)[1][1:].lower()
-    
+    return_obj["name"] = (
+        soup.find("div", class_="title").contents[0].split(".", 1)[1][1:].lower()
+    )
 
     return return_obj
 
