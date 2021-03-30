@@ -1,3 +1,4 @@
+#!/home/tusqasi/Documents/wars/py/cp_problem_getter/.wars/bin/python3
 import sys
 import get_question
 import put_io
