@@ -32,10 +32,12 @@ def get_token():
     try:
         return sys.argv[1]
     except IndexError:
-        print("No URL specified\
-             \nSpecify URL like:\
-             \npython main.py <URL>\
-             \n\n Exiting")
+        print(
+            "No URL specified\
+           \nSpecify URL like:\
+           \npython main.py <URL>\n\
+           \nExiting"
+        )
         exit()
 
 TOKEN = get_token()
