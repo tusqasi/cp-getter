@@ -40,8 +40,10 @@ def get_token():
         )
         exit()
 
-TOKEN = get_token()
-question = get_question.get_question(TOKEN)
-if put_io.put_io(question["name"], question["io"]):
-    make_template.make_template(question["URL"])
-print(question["name"])
+def main():
+    TOKEN = get_token()
+    question = get_question.get_question(TOKEN)
+    if put_io.put_io(question["name"], question["io"]):
+        make_template.make_template(question["URL"])
+    print(question["name"])
+   
