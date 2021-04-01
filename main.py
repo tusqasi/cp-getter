@@ -47,3 +47,8 @@ def main():
         make_template.make_template(question["URL"])
     print(question["name"])
    
+    
+def testing():
+    get_config()
+
+testing()
