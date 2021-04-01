@@ -1,8 +1,8 @@
 import os
 
 
-def put_io(question_name: str, io: dict):
-    os.chdir("../questions")
+def put_io(question_name: str, io: dict, question_folder: str = "../questions"):
+    os.chdir(question_folder)
     try:
         os.mkdir(question_name)
     except FileExistsError:
