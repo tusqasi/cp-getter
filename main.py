@@ -1,8 +1,9 @@
 #!/home/tusqasi/Documents/wars/py/cp_problem_getter/.wars/bin/python3
 import sys
-import get_question
+# import get_question
 import put_io
 import make_template
+import get_question_http
 import json
 
 def GetJsonFromFile(filePath):
@@ -28,23 +29,22 @@ def get_config():
         print("No config file found")
         exit()
         
-def get_token():
-    try:
-        return sys.argv[1]
-    except IndexError:
-        print(
-            "No URL specified\
-           \nSpecify URL like:\
-           \npython main.py <URL>\n\
-           \nExiting"
-        )
-        exit()
+# def get_token():
+#     try:
+#         return sys.argv[1]
+#     except IndexError:
+#         print(
+#             "No URL specified\
+#            \nSpecify URL like:\
+#            \npython main.py <URL>\n\
+#            \nExiting"
+#         )
+#         exit()
 
 def main():
-    TOKEN = get_token()
-    question = get_question.get_question(TOKEN)
-    if put_io.put_io(question["name"], question["io"]):
-        make_template.make_template(question["URL"])
+    question = get_question_http.main()
+    if put_io.put_io(question["name"], question["tests"]):
+        make_template.make_template(question["url"])
     print(question["name"])
    
     
