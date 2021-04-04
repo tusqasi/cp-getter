@@ -1,10 +1,10 @@
 #!/home/tusqasi/Documents/wars/py/cp_problem_getter/.wars/bin/python3
 import sys
+import json
 
 import get_question
 import put_io
 import make_template
-import json
 
 
 def GetJsonFromFile(filePath):
@@ -43,6 +43,5 @@ def testing():
     get_config()
 
 
-# testing()
 if __name__ == "__main__":
     main()
