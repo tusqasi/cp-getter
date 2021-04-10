@@ -31,3 +31,8 @@ def put_io(question_name: str, io: list, question_folder: str = "../questions"):
         put_stuff(tc, i)
 
     return 0
+
+def test():
+    put_io("replacement", [{"input": "10 3\n.b..bz....\n1 h\n3 c\n9 f\n","output": "4\n3\n1\n"},{"input": "4 4\n.cc.\n2 .\n3 .\n2 a\n1 a\n","output": "1\n3\n1\n1\n"}])
+if __name__ == "__main__":
+    test()
