@@ -33,7 +33,7 @@ def get_config():
 
 
 def main():
-    question = get_question_http.main()
+    question = get_question.main()
     if put_io.put_io(question["name"], question["tests"]):
         make_template.make_template(question["url"])
     print(question["name"])
