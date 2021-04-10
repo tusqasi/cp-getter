@@ -30,5 +30,6 @@ def main():
     server.start()
     hmm.start()
     server.join()
+    return question
 if __name__ == "__main__":
     main()
