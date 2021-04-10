@@ -24,6 +24,8 @@ def put_io(question_name: str, io: list, question_folder: str = "../questions"):
     except FileExistsError:
         os.chdir(question_name)
         return 1
+    finally:
+        os.chdir(question_name)
 
     # Now in a folder with question_name
 
