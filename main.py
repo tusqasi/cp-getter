@@ -34,6 +34,7 @@ def get_config():
 
 def main():
     question = get_question.main()
+    question["name"] = "_".join(question["name"].split(" ")[1:])
     if put_io.put_io(question["name"], question["tests"]):
         make_template.make_template(question["url"])
     print(question["name"])
