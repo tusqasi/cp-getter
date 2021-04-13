@@ -3,6 +3,7 @@ ___
 # cp-getter
 
 cp-getter is a python cli program which setups test cases for a problem on competive programming sites.
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 ## Installation (only for testing)
 
